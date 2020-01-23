@@ -5,10 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        table, th, td {
+          border: 2px solid #e6e6ef;
+          border-spacing: 5px;
+          empty-cells: hide;
+          table-layout: fixed;
+          width: 1920;
+        }
+
+        th:hover {
+            background-color:#e6e6ef;
+            transition: 1.5s;
+            }
+
+        td:hover {
+            background-color: #e6e6ef;
+            transition: 1.5s;
+            }
+
+        @font-face {
+            font-family: Bodoni XT;
+            src: url(https://www.dafont.com/bodoni-xt.font)
+        }
+
+        #attribute {
+            font-family: Bodoni XT;
+            color: #474646;
+        }
+
+        #attribute th {font-size: 37px;}
+
+        #attribute td, #attribute th {
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+        #attribute tr {background-color: #efd3cf;}
+
+               
+    </style>
 </head>
 <body>
-    <h1>Attribute</h1>
-    <table>
+    <img src="https://www.img.in.th/images/4cc95888dc5a476aa4f0a97d3b85ee8a.jpg" alt="Attribute">
+    <table id="attribute">
         <thead>
             <tr>
                 <th>h</th>
@@ -36,21 +82,21 @@
                 <td><strong>Not supported in HTML5</strong></td>
                 <td><strong>accept-charset</strong> - Specifies the character encodings <br>that are to be used for the form submission.</td>
                 <td><strong>autofocus</strong> - Specifies that the button should be <br>autometically get focus when the page loads.</td>
-                <td><strong>accresskey</strong> - Specifies a shortcut key to activate/focus an element.</td>
+                <td><strong>accresskey</strong> - Specifies a shortcut key to activate/<br>focus an element.</td>
             </tr>
 
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><strong>crossorigin</strong> - Allow images from third-party <br>sites that allow cross-origin access to be used <br>with canvas.</td>
+                <td><strong>crossorigin</strong> - Allow images from third-party sites that <br>allow cross-origin access to be used with canvas.</td>
                 <td><strong>href</strong> - Specifies the url of the page the link goes <br>to.</td>
                 <td></td>
                 <td><strong>start</strong> - Specifies the start value of an ordered list.</td>
                 <td></td>
                 <td><strong>action</strong> - Specifies where to send the form-data when <br>a form is submitted.</td>
                 <td><strong>disable</strong> - Specifies that the button should be <br>disable.</td>
-                <td><strong>class</strong> - Specifies one or more classnames for an element. </td>
+                <td><strong>class</strong> - Specifies one or more <br>classnames for an element. </td>
             </tr>
 
             <tr>
@@ -64,7 +110,7 @@
                 <td></td>
                 <td><strong>autocomplete</strong> - Specifies whether a form <br>should have autocomplete on or off.</td>
                 <td><strong>form</strong> - Specifies one or more form the button <br>belong to.</td>
-                <td><strong>contenteditable</strong> - Specifies whether the content of an element is editable or not.</td>
+                <td><strong>contenteditable</strong> - Specifies <br>whether the content of an <br>element is editable or not.</td>
             </tr>
 
             <tr>
@@ -78,7 +124,7 @@
                 <td></td>
                 <td><strong>enctype</strong> - Specifies how the form-data should be <br>encoded when submitting it to the server.</td>
                 <td><strong>formaction</strong> - Specifies where to send the <br>form-data when a form is submitted.</td>
-                <td><strong>data-*</strong> - Used to store custom data private to the page or application</td>
+                <td><strong>data-*</strong> - Used to store custom <br>data private to the page or <br>application</td>
             </tr>
 
             <tr>
@@ -92,7 +138,7 @@
                 <td></td>
                 <td><strong>method</strong> - Specifies the HTTP method to use when <br>sending form-data.</td>
                 <td><strong>formenctype</strong> - Specifies how form-data should <br>be encoded before sending to a server.</td>
-                <td><strong>dir</strong> - Specifies the text direction for the content in an element.</td>
+                <td><strong>dir</strong> - Specifies the text direction <br>for the content in an element.</td>
             </tr>
 
             <tr>
@@ -106,7 +152,7 @@
                 <td></td>
                 <td><strong>name</strong> - Specifies the name of a form</td>
                 <td><strong>formmethod</strong> - Specifies how to send the form data.</td>
-                <td><strong>draggable</strong> - Specifies whether an element is draggable or not.</td>
+                <td><strong>draggable</strong> - Specifies whether <br>an element is draggable or not.</td>
             </tr>
 
             <tr>
@@ -120,7 +166,7 @@
                 <td></td>
                 <td><strong>novalidate</strong> - Specifies that the form should not be <br>validated when submitted</td>
                 <td><strong>formnovalidate</strong> - Specifies that the form-data <br>should not be validate.</td>
-                <td><strong>dropzone</strong>Specifies whether the dragged data is copied, moved, or linked, when dropped.</td>
+                <td><strong>dropzone</strong> - Specifies whether the <br>dragged data is copied, moved, <br>or linked, when dropped.</td>
             </tr>
 
             <tr>
@@ -134,7 +180,7 @@
                 <td></td>
                 <td><strong>target</strong> - Specifies where to display the response that <br>is received after submitting the form.</td>
                 <td><strong>formtarget</strong> - Specifies where to display the <br>response after submitting the form.</td>
-                <td><strong>hidden</strong> - Specifies that the element is not yet, or is no longer, relevant.</td>
+                <td><strong>hidden</strong> - Specifies that the <br>element is not yet, or is no <br>longer, relevant.</td>
             </tr>
 
             <tr>
@@ -148,7 +194,7 @@
                 <td></td>
                 <td></td>
                 <td><strong>name</strong> - Specifies the name of a button</td>
-                <td><strong>id</strong> - Specified a unique id for an element.</td>
+                <td><strong>id</strong> - Specified a unique id for <br>an element.</td>
             </tr>
 
             <tr>
@@ -162,7 +208,7 @@
                 <td></td>
                 <td></td>
                 <td><strong>type</strong> - Specifies the type of a button.</td>
-                <td><strong>lang</strong> - Specifies the language of the element's content.</td>
+                <td><strong>lang</strong> - Specifies the language <br>of the element's content.</td>
             </tr>
 
             <tr>
@@ -176,7 +222,7 @@
                 <td></td>
                 <td></td>
                 <td><strong>value</strong> - Specifies an initial value for a button.</td>
-                <td><strong>spellcheck</strong> - Specifies whether the element is to have its spelling and grammar checked or not.</td>
+                <td><strong>spellcheck</strong> - Specifies whether <br>the element is to have its <br>spelling and grammar checked or not.</td>
             </tr>
             <tr>
                 <td></td>
@@ -189,7 +235,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><strong>style</strong> - Specifies an inline CSS style for an element. </td>
+                <td><strong>style</strong> - Specifies an inline CSS <br>style for an element. </td>
             </tr>
             <tr>
                 <td></td>
@@ -202,7 +248,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><strong>tabindex</strong> - Specifies the tabbing order of an element. </td>
+                <td><strong>tabindex</strong> - Specifies the <br>tabbing order of an element. </td>
             </tr><tr>
                 <td></td>
                 <td></td>
@@ -214,7 +260,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><strong>title</strong> - Specifies extra information about an element.</td>
+                <td><strong>title</strong> - Specifies extra <br>information about an element.</td>
             </tr><tr>
                 <td></td>
                 <td></td>
@@ -226,7 +272,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><strong>translate</strong> - Specifies whether the content of an element should be translated or not.</td>
+                <td><strong>translate</strong> - Specifies whether <br>the content of an element should be translated or not.</td>
             </tr>
         </tbody>
     </table>
