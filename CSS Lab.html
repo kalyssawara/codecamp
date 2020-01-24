@@ -8,12 +8,161 @@
 
     <style>
         body {
-          background-image: url("https://www.img.in.th/images/6b7da0db19102e96f9449cc3d2eed02f.jpg");
-          width: 100%;
+            background-image: url("https://www.img.in.th/images/6b7da0db19102e96f9449cc3d2eed02f.jpg");
+            background-size: cover;
+            opacity: 0.7;
         }
+
+        /* Navigation Bar is a list of links that help users navigate to different parts of web sites. */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Dropdowns is menu refers to a menu that hides several elements or displays additional information. This content usually appears on mouseover. */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; 
+            margin: 0; 
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #a3d1c2;
+            color: #333
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd; 
+        } 
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Tooltip is a small "hover box" with information about the item being hovered over. */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 80px;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 3px 0;
+            font-size: 12px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .text {
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 70px 300px 400px 800px
+
+        }
+
+        /* Pagination is the process of dividing the document into pages and providing them with numbers. */
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: #474646;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .pagination a.active {
+            background-color: #474646;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {background-color: #ddd;}
+        
         </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#aboutus">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">Product 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Product 1</a>
+            <a href="#">Product 2</a>
+            <a href="#">Product 3</a>
+          </div>
+        </div>
+        <div class="tooltip">
+        <a href="#contactus">Contact Us</a>
+        <span class="tooltiptext">For more information</span>
+        </div>
+      </div>
+
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nam rem, saepe earum voluptas labore repellat praesentium, eius similique quos facilis in dignissimos molestias blanditiis, ut ab facere quod! Id beatae, itaque delectus fuga excepturi accusamus possimus in necessitatibus obcaecati doloribus non vero ut accusantium laboriosam animi ratione assumenda praesentium officia impedit a hic quae! Rem cumque sit inventore, fugiat officia nesciunt a quis aliquam suscipit reiciendis distinctio eos! Non, tenetur delectus dignissimos veniam consectetur dolorum commodi molestiae quibusdam recusandae earum molestias debitis natus qui. Deleniti numquam, voluptatum doloremque quod officiis, sapiente minus suscipit, atque quia repellat possimus tempore voluptatibus.</p>
+
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+
    
 </body>
 </html>
