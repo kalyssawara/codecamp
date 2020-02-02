@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webboard</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #dae0e5;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+
+    .head-trending {
+        font-size: 14px;
+        font-weight: bold;
+        color: #545454;
+        margin: 10px 0;
+    }
+
+    .trending-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px;
+        background-color: #87cbdd;
+        grid-gap: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+
+    .trending-item h3 {
+        color: #fff;
+        padding: 100px 0 0 5px;
+    }
+    .trending-item p {
+        color: #fff;
+        padding-left: 5px;
+    }
+
+    .section {
+        width: 545px;
+        height: 500px;
+        float: left;
+    }
+
+    .head-popular {
+        font-size: 14px;
+        font-weight: bold;
+        color: #545454;
+        margin: 10px 0;
+    }
+
+    .popular-grid {
+        display: grid;
+        grid-template-rows: 250px 450px;
+        grid-gap: 10px;
+        background-color: #fff;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+
+    .popular-item img {
+        width: 600px;
+        height: 350px;
+    }
+
+    .aside {
+        width: 305px;
+        height: 450px;
+        float: right;
+        background-color: #fff;
+    }
+
+    .top ol li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .top h3 {
+        font-weight: bold;
+        color: #fff;
+        padding: 30px 0 0 10px;
+    }
+
+    .top img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .top input[type="button"] {
+        background-color: #0079d3;
+        width: 290px;
+        height: 30px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .top-button input[type="button"] {
+        background-color: #f6f7f8;
+        font-weight: lighter;
+        color: #0079d3;
+        width: 3rem;
+        height: 30px;
+        margin: 10px;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Webboard</h1>
+    <h2>Example Page</h2>
+    <img src="Images/webboard.png">
+
+    <div class="container">
+
+        <div class="head-trending">Trending today</div>
+
+        <header class="trending">
+            <div class="trending-grid">
+                <div class="trending-item">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="trending-item">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="trending-item">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="trending-item">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="head-popular">Popular posts</div>
+
+        <section class="popular">
+
+            <div class="popular-grid">
+                <div class="popular-item">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias harum obcaecati! Quis asperiores reiciendis blanditiis deleniti molestias, dolorem maiores!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur aperiam repellat deserunt iusto aliquam nam sunt inventore nisi laboriosam.</p>
+                </div>
+
+                <div class="popular-item">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias harum obcaecati! Quis asperiores reiciendis blanditiis deleniti molestias, dolorem maiores!</h2>
+                    <img src="http://via.placeholder.com/600x350">
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="top">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <ol>
+                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
+                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
+                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
+                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
+                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
+            </ol>
+            <input type="button" value="VIEW ALL"><br>
+            <div class="top-button">
+                <span>
+                    <input type="button" value="Sports">
+                    <input type="button" value="News">
+                    <input type="button" value="Gaming">
+                    <input type="button" value="Aww">
+                </span>
+            </div>
+
+        </aside>
+    </div>
+</body>
+</html>
