@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        margin: 0 250px;
+    }
+
+    .content-head-grid {
+        display: grid;
+        grid-template-columns: 750px 1fr;
+        grid-gap: 10px;
+        cursor: pointer;
+    }
+
+    .content-head-item:nth-child(1) {
+        grid-row: 1/3;
+    }
+
+    .content-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-icon-grid {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 40px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .content-icon-item .fa {
+        font-size: 2rem;
+        border: 2px solid #efefef;
+        border-radius: 20%;
+        padding: 5px;
+    }
+
+    .content-icon-item p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .categories {
+        font-size: 16px;
+        color: #979797;
+        margin: 40px 0;
+    }
+
+    .content-categories {
+        width: 100%;
+        height: auto;
+    }
+    
+    .content-categories-grid {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        border: 2px solid #efefef;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .content-categories-item {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .content-categories-item img {
+        border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+    <h1>Shopping Page</h1>
+    <h2>Example Page</h2>
+    <img src="Images/shopping.png" alt="">
+
+    <section class="container">
+
+        <div class="content-head">
+            <div class="content-head-grid">
+                <div class="content-head-item">
+                    <img src="https://via.placeholder.com/800x320" alt="">
+                </div>
+
+                <div class="content-head-item">
+                    <img src="https://via.placeholder.com/400x125" alt="">
+                </div>
+
+                <div class="content-head-item">
+                    <img src="https://via.placeholder.com/400x125" alt="">
+                </div>
+            </div>
+
+            <div class="content-icon">
+                <div class="content-icon-grid">
+                    <div class="content-icon-item">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <p>Free Shipping</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <p>Men's Sale</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-gamepad" aria-hidden="true"></i>
+                        <p>Super Gamer Zone</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <p>Electronics Expo</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <p>Fashion Zone</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        <p>Shopee Mart</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        <p>Coin Rewards</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-cc" aria-hidden="true"></i>
+                        <p>Vouchers</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        <p>Partner Privileges</p>
+                    </div>
+
+                    <div class="content-icon-item">
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+                        <p>All Campaigns</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories">หมวดหมู่</div>
+
+            <div class="content-categories">
+                <div class="content-categories-grid">
+                    <div class="content-categories-item">
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>เสื้อผ้าแฟชั่นผู้ชาย</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>มือถือและอุปกรณ์เสริม</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>อาหารเสริมและผลิตภัณฑ์สุขภาพ</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>นาฬิกาและแว่นตา</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>รองเท้าผู้ชาย</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>คอมพิวเตอร์และแล็ปท็อป</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>กล้องและอุปกรณ์ถ่ายภาพ</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>กีฬาและกิจกรรมกลางแจ้ง</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>สื่อบันเทิงภายในบ้าน</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>เกมส์และอุปกรณ์เสริม</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>เสื้อผ้าแฟชั่นผู้หญิง</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>ความงามและของใช้ส่วนตัว</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>ของเล่น สินค้าแม่และเด็ก</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>เครื่องใช้ในบ้าน</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>กระเป๋า</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>รองเท้าผู้หญิง</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>เครื่องประดับ</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>อาหารและเครื่องดื่ม</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>เครื่องใช้ไฟฟ้าภายในบ้าน</p>
+                        </div>
+
+                        <div class="content-categories-item">
+                            <img src="http://via.placeholder.com/100x100">
+                            <p>สัตว์เลี้ยง</p>
+                        </div>
+
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
