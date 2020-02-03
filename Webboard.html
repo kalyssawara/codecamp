@@ -72,7 +72,7 @@
     .content-grid {
         display: grid;
         grid-template-columns: 630px 1fr;
-        grid-template-rows: 250px auto 500px;
+        /*grid-template-rows: 250px auto 500px;*/
         grid-row-gap: 10px;
         grid-column-gap: 20px;
         cursor: pointer;
@@ -84,14 +84,18 @@
         padding: 10px;
     }
 
-    .content-item:nth-child(2) {
+    /*.content-item:nth-child(2) {
         grid-area: 1 / 2 / 3/ 3;
         padding: 20px;
-    }
+    }*/
 
     .content-item h3 {
         font-weight: bold;
         padding: 30px 0 0 10px;
+    }
+
+    .content-item p {
+        padding-bottom: 50px;
     }
 
     .item1 img {
@@ -200,6 +204,8 @@
                 <div class="content-item">
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odit facere nesciunt, quia nam enim aspernatur provident doloremque at quasi.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, doloribus! Labore assumenda, dignissimos soluta minima unde suscipit dolorem inventore commodi!</p>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias harum obcaecati! Quis asperiores reiciendis blanditiis deleniti molestias, dolorem maiores!</h2>
+                    <img src="http://via.placeholder.com/600x350">
                 </div>
 
                 <div class="content-item">
@@ -221,10 +227,10 @@
                     </div>
                 </div>
 
-                <div class="content-item">
+                <!--<div class="content-item">
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias harum obcaecati! Quis asperiores reiciendis blanditiis deleniti molestias, dolorem maiores!</h2>
                     <img src="http://via.placeholder.com/600x350">
-                </div>
+                </div>-->
             </div>
         </section>
 
