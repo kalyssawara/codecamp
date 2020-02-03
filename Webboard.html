@@ -7,7 +7,7 @@
     <title>Webboard</title>
 
     <style>
-    * {
+     * {
         margin: 0;
         padding: 0;
     }
@@ -42,11 +42,14 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 200px;
-        background-color: #87cbdd;
         grid-gap: 10px;
         cursor: pointer;
+    }
+
+    .trending-item {
+        border: 1px solid #87cbdd;
+        background-color: #87cbdd;
         border-radius: 10px;
-        
     }
 
     .trending-item h3 {
@@ -58,11 +61,6 @@
         padding-left: 5px;
     }
 
-    .section {
-        width: 545px;
-        height: 500px;
-        float: left;
-    }
 
     .head-popular {
         font-size: 14px;
@@ -71,64 +69,95 @@
         margin: 10px 0;
     }
 
-    .popular-grid {
+    .content-grid {
         display: grid;
-        grid-template-rows: 250px 450px;
-        grid-gap: 10px;
-        background-color: #fff;
+        grid-template-columns: 630px 1fr;
+        grid-template-rows: 250px auto 500px;
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
         cursor: pointer;
-        padding-left: 20px;
     }
 
-    .popular-item img {
-        width: 600px;
-        height: 350px;
-    }
-
-    .aside {
-        width: 305px;
-        height: 450px;
-        float: right;
+    .content-item {
         background-color: #fff;
+        border: 1px solid #fff;
+        padding: 10px;
     }
 
-    .top ol li {
-        font-size: 14px;
-        margin-bottom: 20px;
+    .content-item:nth-child(2) {
+        grid-area: 1 / 2 / 3/ 3;
+        padding: 20px;
     }
 
-    .top h3 {
+    .content-item h3 {
         font-weight: bold;
-        color: #fff;
         padding: 30px 0 0 10px;
     }
 
-    .top img {
+    .item1 img {
         width: 30px;
         height: 30px;
         border-radius: 50%;
         margin-top: 20px;
+        border-radius: 50%;
     }
 
-    .top input[type="button"] {
+    .item2 img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+
+    .item3 img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+
+    .item4 img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+
+    .item5 img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+
+    .content-item input[type="button"] {
         background-color: #0079d3;
-        width: 290px;
+        width: 270px;
         height: 30px;
         color: #fff;
         font-weight: bold;
         border-radius: 5px;
+        margin: 10px 8px;
+        cursor: pointer;
     }
 
-    .top-button input[type="button"] {
+    .button input[type="button"] {
         background-color: #f6f7f8;
         font-weight: lighter;
         color: #0079d3;
         width: 3rem;
         height: 30px;
-        margin: 10px;
+        margin: 5px;
         padding: 3px;
         border-radius: 5px;
+        margin-left: 13px;
+        cursor: pointer;
     }
+
     </style>
 </head>
 <body>
@@ -166,42 +195,39 @@
 
         <div class="head-popular">Popular posts</div>
 
-        <section class="popular">
-
-            <div class="popular-grid">
-                <div class="popular-item">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias harum obcaecati! Quis asperiores reiciendis blanditiis deleniti molestias, dolorem maiores!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur aperiam repellat deserunt iusto aliquam nam sunt inventore nisi laboriosam.</p>
+        <section class="content">
+            <div class="content-grid">
+                <div class="content-item">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odit facere nesciunt, quia nam enim aspernatur provident doloremque at quasi.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, doloribus! Labore assumenda, dignissimos soluta minima unde suscipit dolorem inventore commodi!</p>
                 </div>
 
-                <div class="popular-item">
+                <div class="content-item">
+                    <h3>Lorem ipsum dolor sit amet.<br></h3>
+                    <div class="item1">1. <img src="http://via.placeholder.com/30x30"> Lorem, ipsum.<br></div>
+                    <div class="item2">2. <img src="http://via.placeholder.com/30x30"> Lorem, ipsum.<br></div>
+                    <div class="item3">3. <img src="http://via.placeholder.com/30x30"> Lorem, ipsum.<br></div>
+                    <div class="item4">4. <img src="http://via.placeholder.com/30x30"> Lorem, ipsum.<br></div>
+                    <div class="item5">5. <img src="http://via.placeholder.com/30x30"> Lorem, ipsum.<br></div>
+                    <input type="button" value="VIEW ALL">
+                    <div class="button">
+                    <span>
+                            <input type="button" value="Sports">
+                            <input type="button" value="News">
+                            <input type="button" value="Gaming">
+                            <input type="button" value="Aww">
+                    </span>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="content-item">
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias harum obcaecati! Quis asperiores reiciendis blanditiis deleniti molestias, dolorem maiores!</h2>
                     <img src="http://via.placeholder.com/600x350">
                 </div>
             </div>
-
         </section>
 
-        <aside class="top">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <ol>
-                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
-                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
-                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
-                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
-                <li><img src="http://via.placeholder.com/30x30"> Lorem, ipsum.</li>
-            </ol>
-            <input type="button" value="VIEW ALL"><br>
-            <div class="top-button">
-                <span>
-                    <input type="button" value="Sports">
-                    <input type="button" value="News">
-                    <input type="button" value="Gaming">
-                    <input type="button" value="Aww">
-                </span>
-            </div>
-
-        </aside>
-    </div>
+    
 </body>
 </html>

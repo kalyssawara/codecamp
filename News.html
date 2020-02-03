@@ -48,7 +48,7 @@
         font-size: 36px;
         color: #fff;
         font-weight: lighter;
-        padding: 310px 0 0 10px;
+        padding: 280px 0 0 10px;
     }
 
     .content-welcome h3 {
@@ -70,14 +70,18 @@
         display: grid;
         grid-template-columns: 50% 1fr 1fr;
         grid-template-rows: 200px 200px;
-        background-color: #e7bad6;
-        grid-gap: 10px;
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
         cursor: pointer;
         margin-bottom: 40px;
-        
     }
 
-    .content-welcome-item1 {
+    .content-welcome-item {
+        border: 1px solid #e7bad6;
+        background-color: #e7bad6;
+    }
+
+    .content-welcome-item:nth-child(1) {
         grid-row: 1/3;
     }
 
@@ -140,28 +144,28 @@
 
         <div class="content-welcome">
             <div class="content-welcome-grid">
-                <div class="content-welcome-item1">
+                <div class="content-welcome-item">
                     <h2>Lorem ipsum dolor sit amet consectetur.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsam sequi id!</p>
                     <a href="#">WORLD</a>
                 </div>
 
-                <div class="content-welcome-item2">
+                <div class="content-welcome-item">
                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                     <a href="#">UK</a>
                 </div>
 
-                <div class="content-welcome-item3">
+                <div class="content-welcome-item">
                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                     <a href="#">UK</a>
                 </div>
 
-                <div class="content-welcome-item4">
+                <div class="content-welcome-item">
                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                     <a href="#">FUTURE</a>
                 </div>
 
-                <div class="content-welcome-item5">
+                <div class="content-welcome-item">
                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                     <a href="#">WORKLIFE</a>
                 </div>
